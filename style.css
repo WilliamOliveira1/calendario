@@ -1,0 +1,60 @@
+.button {
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    box-shadow: 0 9px #999;
+}
+
+.buttonSemana {
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    box-shadow: 0 9px #999;
+}
+
+.limpar {
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    box-shadow: 0 9px #999;
+    border-radius: 10px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 34px #666;
+    transform: translateY(-25px);
+}
+
+.limpar:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.buttonSemana:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+@media (min-width: 1200px) {
+    .buttonSemana {font-size: 25px;}
+}
+
+@media (max-width: 1200px) {
+    .buttonSemana {font-size: 20px;}
+}
