@@ -9,7 +9,7 @@ $(".tableRow").on('click', function(e) {
         $("#"+e.target.id).css({
             'border-radius' : '2px',
             'background-color' : 'red',
-            'box-shadow' : '0 25px #666',
+            'box-shadow' : '0 25px #412554',
             'transform' : 'translateY(-25px)'            
          });    
     } if(e.target.id <= 31  && clickDia < 1) {
@@ -17,7 +17,7 @@ $(".tableRow").on('click', function(e) {
         $("#"+e.target.id).css({
             'border-radius' : '2px',
             'background-color' : 'red',
-            'box-shadow' : '0 34px #666',
+            'box-shadow' : '0 34px #412554',
             'transform' : 'translateY(-25px)'            
          }); 
     }
