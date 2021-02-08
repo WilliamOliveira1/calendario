@@ -708,8 +708,8 @@ document.addEventListener('DOMContentLoaded', function()
   cityEl.innerHTML = 'Loading clouds...';
   preLoadImageAssets(function()
   {
-    cityEl.innerHTML = 'Sorocaba, Brasil';
-    tempEl.innerHTML = '30&deg;';
+    cityEl.innerHTML = '';
+    tempEl.innerHTML = '';
     setConditionReady();
   });
 });
