@@ -1,3 +1,15 @@
+#mainContent {
+  display: grid;
+  place-items: center;
+}
+
+.mainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 
 .month {
     display: block;

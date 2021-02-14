@@ -1,151 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Calendario Jaque</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="container area">
-    <main class="row">
-        <div class="row circles">
-            <div id="TableWeek" class="container month">
-                <table class="row table">
-                    <div class="row">
-                        <h1 class="text-center col-9">Semana</h1>
-                        <button id="limparStyleWeek" class="limpar m-1">Limpar</button>
-                    </div>
-                    <tbody>
-                        <tr class="tableRowWeek col-12 semana">
-                            <td id="dom" class="buttonSemana" scope="row">Domingo</td>
-                            <td id="seg" class="buttonSemana">Segunda-feira</td>
-                            <td id="ter" class="buttonSemana">Terça-feira</td>
-                            <td id="qua" class="buttonSemana">Quarta-feira</td>
-                            <td id="qui" class="buttonSemana">Quinta-Feira</td>
-                            <td id="sex" class="buttonSemana">Sexta-Feira</td>
-                            <td id="sab" class="buttonSemana">Sabado</td>
-                        </tr>
-                    </tbody>
-                </table>                                
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container area">
+    <main id="mainContent" class="row">
+      <div class="row mainDiv">
+        <div id="TableWeek" class="container month">
+          <table class="row table">
+            <div class="row mb-4">
+              <h1 class="text-center col-9">Semana</h1>
+              <button id="limparStyleWeek" class="limpar m-1">Limpar</button>
             </div>
-            <div class="row month">
-                <div class="col-12 mb-4">
-                    <table class="table">
-                        <div class="row m-2">
-                            <h1 class="text-center col-10">Fevereiro</h1>
-                            <button id="limparStyle" class="col-2 limpar">Limpar</button>
-                        </div>
-                        <tbody>
-                          <tr class="tableRow">
-                            <td id="1" class="" scope="row"></td>
-                            <td id="2" class="button">1</td>
-                            <td id="3" class="button">2</td>
-                            <td id="4" class="button">3</td>
-                            <td id="5" class="button">4</td>
-                            <td id="6" class="button">5</td>
-                            <td id="7" class="button">6</td>
-                          </tr>
-                          <tr class="tableRow">
-                            <td id="8" class="button" scope="row">7</td>
-                            <td id="9" class="button">8</td>
-                            <td id="10" class="button">9</td>
-                            <td id="11" class="button">10</td>
-                            <td id="12" class="button">11</td>
-                            <td id="13" class="button">12</td>
-                            <td id="14" class="button">13</td>
-                          </tr>
-                          <tr class="tableRow">
-                            <td id="15" class="button" scope="row">14</td>
-                            <td id="16" class="button">15</td>
-                            <td id="17" class="button">16</td>
-                            <td id="18" class="button">17</td>
-                            <td id="19" class="button">18</td>
-                            <td id="20" class="button">19</td>
-                            <td id="21" class="button">20</td>
-                          </tr>
-                          <tr class="tableRow">
-                            <td id="22" class="button" scope="row">21</td>
-                            <td id="23" class="button">22</td>
-                            <td id="24" class="button">23</td>
-                            <td id="25" class="button">24</td>
-                            <td id="26" class="button">25</td>
-                            <td id="27" class="button">26</td>
-                            <td id="28" class="button">27</td>
-                          </tr>
-                          <tr class="tableRow">
-                            <td id="29" class="button" scope="row">28</td>
-                          </tr>
-                        </tbody>
-                      </table>                                
-                </div>
-            </div>
+            <tbody>
+              <tr class="tableRowWeek col-12 semana">
+                <td id="dom" class="buttonSemana" scope="row">Domingo</td>
+                <td id="seg" class="buttonSemana">Segunda-feira</td>
+                <td id="ter" class="buttonSemana">Terça-feira</td>
+                <td id="qua" class="buttonSemana">Quarta-feira</td>
+                <td id="qui" class="buttonSemana">Quinta-Feira</td>
+                <td id="sex" class="buttonSemana">Sexta-Feira</td>
+                <td id="sab" class="buttonSemana">Sabado</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="weather">
-            <div class="canvas-outer">
-                <canvas width="600" height="350" id="canvas" class="canvas day"></canvas>
-                <div class="overlay">
-                  <div class="location-details">
-                    <div class="city" id="city"></div>
-                    <div class="temp" id="temp"></div>
-                  </div>
+        <div class="row month mt-4">
+          <div class="col-12 mb-4">
+            <table class="table">
+              <div class="row mb-4">
+                <h1 class="text-center col-10">Fevereiro</h1>
+                <button id="limparStyle" class="col-2 limpar">Limpar</button>
+              </div>
+              <tbody>
+                <tr class="tableRow">
+                  <td id="1" class="" scope="row"></td>
+                  <td id="2" class="button">1</td>
+                  <td id="3" class="button">2</td>
+                  <td id="4" class="button">3</td>
+                  <td id="5" class="button">4</td>
+                  <td id="6" class="button">5</td>
+                  <td id="7" class="button">6</td>
+                </tr>
+                <tr class="tableRow">
+                  <td id="8" class="button" scope="row">7</td>
+                  <td id="9" class="button">8</td>
+                  <td id="10" class="button">9</td>
+                  <td id="11" class="button">10</td>
+                  <td id="12" class="button">11</td>
+                  <td id="13" class="button">12</td>
+                  <td id="14" class="button">13</td>
+                </tr>
+                <tr class="tableRow">
+                  <td id="15" class="button" scope="row">14</td>
+                  <td id="16" class="button">15</td>
+                  <td id="17" class="button">16</td>
+                  <td id="18" class="button">17</td>
+                  <td id="19" class="button">18</td>
+                  <td id="20" class="button">19</td>
+                  <td id="21" class="button">20</td>
+                </tr>
+                <tr class="tableRow">
+                  <td id="22" class="button" scope="row">21</td>
+                  <td id="23" class="button">22</td>
+                  <td id="24" class="button">23</td>
+                  <td id="25" class="button">24</td>
+                  <td id="26" class="button">25</td>
+                  <td id="27" class="button">26</td>
+                  <td id="28" class="button">27</td>
+                </tr>
+                <tr class="tableRow">
+                  <td id="29" class="button" scope="row">28</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="weather mt-4">
+          <h1 class="text-center">Clima</h1>
+          <div class="canvas-outer">
+            <canvas
+              width="600"
+              height="350"
+              id="canvas"
+              class="canvas day"
+            ></canvas>
+            <div class="overlay">
+              <div class="location-details">
+                <div class="city" id="city"></div>
+                <div class="temp" id="temp"></div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="controls">
+            <form autocomplete="off">
+              <div class="form-line">
+                <div class="radio-button-group">
+                  <input
+                    type="radio"
+                    name="time_of_day"
+                    value="night"
+                    id="night"
+                  />
+                  <label for="night">Noite</label>
+  
+                  <input
+                    type="radio"
+                    name="time_of_day"
+                    value="sunrise"
+                    id="sunrise"
+                  />
+                  <label for="sunrise">Amanhecer</label>
+  
+                  <input
+                    type="radio"
+                    name="time_of_day"                    
+                    value="day"
+                    id="day"
+                  />
+                  <label for="day">Dia</label>
+  
+                  <input
+                    type="radio"
+                    name="time_of_day"
+                    value="sunset"
+                    id="sunset"
+                  />
+                  <label for="sunset">Por do sol</label>
                 </div>
               </div>
-            
-              <div class="controls">
-                <form autocomplete="off"> 
-                  <div class="form-line">
-                    <div class="radio-button-group">
-                      <input type="radio" name="time_of_day" value="night" id="night" />
-                      <label for="night">Noite</label>
-            
-                      <input type="radio" name="time_of_day" value="sunrise" id="sunrise" />
-                      <label for="sunrise">Amanhecer</label>
-            
-                      <input type="radio" name="time_of_day" checked="checked" value="day" id="day" />
-                      <label for="day">Dia</label>
-            
-                      <input type="radio" name="time_of_day" value="sunset" id="sunset" />
-                      <label for="sunset">Por do sol</label>
-                    </div>
-                  </div>
-            
-                  <div class="form-line toggle-form-line">
-                    <label class="toggle-label">Vento</label>
-                    <input type="checkbox" name="wind" id="wind" /><label for="wind"></label>
-                  </div>
-            
-                  <div class="form-line toggle-form-line">
-                    <label class="toggle-label">Chuva</label>
-                    <input type="checkbox" name="rain" id="rain" checked="checked" /><label for="rain"></label>
-                  </div>            
-            
-                  <div class="form-line toggle-form-line">
-                    <label class="toggle-label">Nuvens</label>
-                    <input type="checkbox" name="clouds" id="clouds" checked="checked" /><label for="clouds"></label>
-                  </div>
-            
-                  <div class="form-line toggle-form-line">
-                    <label class="toggle-label">Relampagos</label>
-                    <input type="checkbox" name="lightning" id="lightning" /><label for="lightning"></label>
-                  </div>
-                  
-                  <!--
-                    Forked from https://codepen.io/Gerwinnz/pen/RVzrRG 
-                  <div class="me">
-                    <a href="https://twitter.com/gerwinvanroyen" target="_blank">
-                      <div class="name">Gerwin van Royen</div>
-                      <div class="handle">@gerwinvanroyen</div>
-                    </a>
-                  </div>
-                  -->            
-                </form>
+  
+              <div class="form-line toggle-form-line">
+                <label class="toggle-label">Vento</label>
+                <input type="checkbox" name="wind" id="wind" /><label
+                  for="wind"
+                ></label>
               </div>
+  
+              <div class="form-line toggle-form-line">
+                <label class="toggle-label">Chuva</label>
+                <input
+                  type="checkbox"
+                  name="rain"
+                  id="rain"
+                /><label for="rain"></label>
+              </div>
+  
+              <div class="form-line toggle-form-line">
+                <label class="toggle-label">Nuvens</label>
+                <input
+                  type="checkbox"
+                  name="clouds"
+                  id="clouds"
+                /><label for="clouds"></label>
+              </div>
+  
+              <div class="form-line toggle-form-line">
+                <label class="toggle-label">Relampagos</label>
+                <input type="checkbox" name="lightning" id="lightning" /><label
+                  for="lightning"
+                ></label>
+              </div>
+              <!--
+                      Forked from https://codepen.io/Gerwinnz/pen/RVzrRG 
+                    <div class="me">
+                      <a href="https://twitter.com/gerwinvanroyen" target="_blank">
+                        <div class="name">Gerwin van Royen</div>
+                        <div class="handle">@gerwinvanroyen</div>
+                      </a>
+                    </div>
+                    -->
+            </form>
+          </div>
         </div>
+      </div>      
     </main>
-</body>
-<script src="app.js"></script>
+  </body>
+  <script src="app.js"></script>
 </html>

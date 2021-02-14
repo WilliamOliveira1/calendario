@@ -91,9 +91,9 @@ var imageAssets = {
 
 // weather params
 var condition = {
-  clouds: true,
+  clouds: false,
   lightning: false,
-  rain: true,
+  rain: false,
   snow: false,
   wind: false
 };
