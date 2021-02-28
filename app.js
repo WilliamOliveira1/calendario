@@ -13,7 +13,7 @@ $(".tableRow").on('click', function(e) {
             'box-shadow' : '0 25px #412554',
             'transform' : 'translateY(-25px)'            
          });    
-    } if(e.target.id <= 31  && clickDia < 1) {
+    } if(e.target.id <= 32  && clickDia < 1) {
         clickDia += 1;
         $("#"+e.target.id).css({
             'border-radius' : '2px',
@@ -50,6 +50,16 @@ $("#limparStyle").on('click', function() {
         'transform' : ''            
      });
      clickDia = 0;
+});
+
+$("#limparStyle").on('click', function() {
+  $("#1").css({
+      'border-radius' : '',
+      'background-color' : '',
+      'box-shadow' : '',
+      'transform' : ''            
+   });
+   clickDia = 0;
 });
 
 $("#limparStyleWeek").on('click', function() {
